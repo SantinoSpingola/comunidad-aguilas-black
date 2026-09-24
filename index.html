@@ -355,6 +355,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
       <a
         href="https://chat.whatsapp.com/EpFOgoN2ago6K7bnt1wt46"
         data-href-miembros="https://drive.google.com/file/d/1gFC1MbS0j1JQf31jmi-ANx187IqKUb6X/view?usp=sharing"
+        data-text-miembros="Te dejo un regalo de bienvenida"
         class="cta-button"
         id="ctaButton"
         target="_blank"
@@ -384,11 +385,12 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     playBtn.addEventListener('click', loadVideo);
 
-    // /miembros (o ?miembros): mismo contenido, pero el botón va al enlace de data-href-miembros
+    // /miembros (o ?miembros): mismo contenido, pero el botón usa el enlace y el texto de data-href-miembros / data-text-miembros
     var cta = document.getElementById('ctaButton');
     var esMiembros = /\/miembros\/?$/.test(location.pathname) || /[?&]miembros(=|&|$)/.test(location.search);
-    if (esMiembros && cta.dataset.hrefMiembros) {
-      cta.href = cta.dataset.hrefMiembros;
+    if (esMiembros) {
+      if (cta.dataset.hrefMiembros) cta.href = cta.dataset.hrefMiembros;
+      if (cta.dataset.textMiembros) cta.textContent = cta.dataset.textMiembros;
     }
   })();
 </script>
