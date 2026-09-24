@@ -16,7 +16,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
 <meta property="og:type" content="website">
 <meta property="og:title" content="Comunidad Águilas Black">
 <meta property="og:description" content="Creé este espacio para reunir a mujeres profesionales, emprendedoras y empresarias que quieren transformar su conocimiento y talento en marcas, negocios y nuevas oportunidades de ingresos.">
-<meta property="og:image" content="https://i.ytimg.com/vi/bSRMAexM-0U/maxresdefault.jpg">
+<meta property="og:image" content="https://i.ytimg.com/vi/b2Q0SC3GOo4/maxresdefault.jpg">
 
 <meta name="theme-color" content="#0A0A0A">
 
@@ -75,6 +75,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   main{
     position:relative;
     min-height:100vh;
+    min-height:100svh;
     display:flex;
     align-items:center;
     justify-content:center;
@@ -108,7 +109,7 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     position:relative;
     z-index:2;
     width:100%;
-    padding:clamp(56px,10vw,120px) 20px clamp(64px,10vw,120px);
+    padding:clamp(20px,3.5vh,44px) 20px clamp(24px,4vh,48px);
   }
 
   .hero-inner{
@@ -124,14 +125,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     display:flex;
     flex-direction:column;
     align-items:center;
-    margin-bottom:clamp(28px,4vw,40px);
+    margin-bottom:clamp(14px,2.2vh,24px);
   }
 
   .kicker{
-    margin:0 0 18px;
+    margin:0 0 12px;
     font-family:var(--font-sans);
     font-weight:300;
-    font-size:0.76rem;
+    font-size:0.72rem;
     letter-spacing:0.32em;
     text-transform:uppercase;
     color:var(--gold);
@@ -146,14 +147,15 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 
   .headline{
-    margin:0 0 clamp(20px,3vw,28px);
+    margin:0 0 clamp(10px,1.8vh,18px);
     font-family:var(--font-display);
     font-weight:900;
     text-transform:none;
-    font-size:clamp(2.1rem,1.35rem + 3.6vw,4rem);
-    line-height:1.08;
+    font-size:clamp(1.4rem,0.95rem + 1.9vw,2.3rem);
+    line-height:1.12;
     letter-spacing:0.01em;
-    max-width:15ch;
+    max-width:100%;
+    text-wrap:balance;
     background:var(--gradient-metallic);
     -webkit-background-clip:text;
     background-clip:text;
@@ -176,22 +178,23 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
   }
 
   .subhead{
-    margin:0 0 clamp(40px,6vw,56px);
-    max-width:640px;
+    margin:0 0 clamp(14px,2.4vh,24px);
+    max-width:780px;
     font-family:var(--font-serif-body);
-    font-size:clamp(1.1rem,1rem + 0.5vw,1.35rem);
-    line-height:1.75;
+    font-size:clamp(1rem,0.9rem + 0.35vw,1.15rem);
+    line-height:1.5;
+    font-weight:500;
+    text-wrap:pretty;
     color:var(--text-cream-secondary);
-    font-weight:400;
   }
 
   /* ---------- Video ---------- */
 
   .video-wrap{
     position:relative;
-    width:100%;
-    max-width:880px;
-    margin:0 auto clamp(40px,6vw,56px);
+    width:min(100%,680px,max(300px,calc((100vh - 420px) * 1.7778)));
+    width:min(100%,680px,max(300px,calc((100svh - 420px) * 1.7778)));
+    margin:0 auto clamp(16px,2.6vh,26px);
   }
 
   .video-glow{
@@ -238,8 +241,8 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     top:50%;
     left:50%;
     transform:translate(-50%,-50%);
-    width:clamp(64px,9vw,88px);
-    height:clamp(64px,9vw,88px);
+    width:clamp(54px,8vw,72px);
+    height:clamp(54px,8vw,72px);
     border-radius:50%;
     border:1px solid rgba(240,235,224,0.35);
     background:var(--gradient-metallic);
@@ -277,14 +280,14 @@ j=d.createElement(s),dl=l!='dataLayer'?'&l='+l:'';j.async=true;j.src=
     display:inline-flex;
     align-items:center;
     justify-content:center;
-    min-height:56px;
-    padding:18px 52px;
+    min-height:52px;
+    padding:14px 44px;
     border-radius:999px;
     background:var(--gradient-metallic);
     color:#0A0A0A;
     font-family:var(--font-sans);
     font-weight:700;
-    font-size:0.95rem;
+    font-size:0.9rem;
     letter-spacing:0.14em;
     text-transform:uppercase;
     text-decoration:none;
@@ -338,7 +341,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
         <div class="video-frame" id="videoFrame">
           <img
             class="video-thumb"
-            src="https://i.ytimg.com/vi/bSRMAexM-0U/maxresdefault.jpg"
+            src="https://i.ytimg.com/vi/b2Q0SC3GOo4/maxresdefault.jpg"
             alt="Miniatura del video de presentación de Comunidad Águilas Black"
           >
           <button type="button" class="play-btn" id="playBtn" aria-label="Reproducir video de presentación de Comunidad Águilas Black">
@@ -351,6 +354,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
       <a
         href="https://chat.whatsapp.com/EpFOgoN2ago6K7bnt1wt46"
+        data-href-miembros="https://drive.google.com/file/d/1gFC1MbS0j1JQf31jmi-ANx187IqKUb6X/view?usp=sharing"
         class="cta-button"
         id="ctaButton"
         target="_blank"
@@ -368,7 +372,7 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
 
     function loadVideo(){
       var iframe = document.createElement('iframe');
-      iframe.src = 'https://www.youtube-nocookie.com/embed/bSRMAexM-0U?autoplay=1&rel=0&modestbranding=1&playsinline=1';
+      iframe.src = 'https://www.youtube-nocookie.com/embed/b2Q0SC3GOo4?autoplay=1&rel=0&modestbranding=1&playsinline=1';
       iframe.title = 'Video de presentación de Comunidad Águilas Black';
       iframe.allow = 'accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture; web-share';
       iframe.allowFullscreen = true;
@@ -379,6 +383,13 @@ height="0" width="0" style="display:none;visibility:hidden"></iframe></noscript>
     }
 
     playBtn.addEventListener('click', loadVideo);
+
+    // /miembros (o ?miembros): mismo contenido, pero el botón va al enlace de data-href-miembros
+    var cta = document.getElementById('ctaButton');
+    var esMiembros = /\/miembros\/?$/.test(location.pathname) || /[?&]miembros(=|&|$)/.test(location.search);
+    if (esMiembros && cta.dataset.hrefMiembros) {
+      cta.href = cta.dataset.hrefMiembros;
+    }
   })();
 </script>
 
