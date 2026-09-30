@@ -1,6 +1,8 @@
 {
   "rewrites": [
     { "source": "/miembros", "destination": "/index.html" },
-    { "source": "/miembros/", "destination": "/index.html" }
+    { "source": "/miembros/", "destination": "/index.html" },
+    { "source": "/grupo", "destination": "/grupo.html" },
+    { "source": "/grupo/", "destination": "/grupo.html" }
   ]
 }
